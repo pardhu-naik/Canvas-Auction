@@ -1,0 +1,119 @@
+.footer {
+  background: var(--card-bg-light);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 80px 0 30px;
+  margin-top: 80px;
+  transition: var(--transition);
+}
+
+.dark .footer {
+  background: var(--card-bg-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  gap: 80px;
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.footer-brand p {
+  margin: 20px 0;
+  max-width: 300px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: var(--text-secondary-light);
+}
+
+.dark .social-links a {
+  color: var(--text-secondary-dark);
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-group h4 {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.footer-group a {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--text-secondary-light);
+}
+
+.dark .footer-group a {
+  color: var(--text-secondary-dark);
+}
+
+.footer-group a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+.newsletter h4 {
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.newsletter-input {
+  display: flex;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.dark .newsletter-input {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-input input {
+  padding: 10px 15px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: inherit;
+}
+
+.footer-bottom {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+}
+
+.dark .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary-dark);
+}

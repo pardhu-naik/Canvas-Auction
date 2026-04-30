@@ -1,0 +1,215 @@
+.dashboard-page {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 50px;
+}
+
+@media (max-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.dashboard-sidebar {
+  padding: 40px 30px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.user-profile-info {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.user-profile-info h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.user-profile-info span {
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-nav button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.dashboard-nav button:hover {
+  background: rgba(99, 102, 241, 0.05);
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.dashboard-nav button.active {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+}
+
+.logout-btn {
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: #ef4444 !important;
+}
+
+.welcome-card {
+  padding: 50px;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-card h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.welcome-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.stat-card .label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--text-secondary-light);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.stat-card .value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.recent-activity {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.recent-activity h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.activity-item .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.activity-item .icon.bid {
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--primary-color);
+}
+
+.activity-item .icon.heart {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.activity-item .details p {
+  margin-bottom: 5px;
+  color: var(--text-primary-light);
+  font-size: 1rem;
+}
+
+.activity-item .details span {
+  font-size: 0.8rem;
+  color: var(--text-secondary-light);
+}

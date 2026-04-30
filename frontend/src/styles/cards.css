@@ -1,0 +1,132 @@
+.artwork-card {
+  background: var(--card-bg-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .artwork-card {
+  background: var(--card-bg-dark);
+}
+
+.card-image {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.artwork-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ef4444;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.wishlist-btn:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+}
+
+.auction-badge {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header .category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card-header .title {
+  margin: 5px 0 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary-light);
+}
+
+.dark .card-header .title {
+  color: var(--text-primary-dark);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price-info span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary-light);
+}
+
+.price-info .price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 2px;
+  color: var(--text-primary-light);
+}
+
+.dark .price-info .price {
+  color: var(--text-primary-dark);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 7px 15px;
+  font-size: 0.85rem;
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}

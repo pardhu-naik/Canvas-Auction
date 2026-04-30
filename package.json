@@ -1,0 +1,13 @@
+{
+  "name": "art-gallery-auction",
+  "version": "1.0.0",
+  "description": "Art Gallery & Auction Platform",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:all": "npx -y concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
